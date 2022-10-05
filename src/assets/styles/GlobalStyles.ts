@@ -1,16 +1,16 @@
 import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
-  *,
-  ::after,
-  ::before {
-    padding: 0;
+  /* fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
+
+  * {
     margin: 0;
+    padding: 0;
+    outline: none;
     box-sizing: border-box;
   }
 
-   /* fonts */
-   @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
 
   html {
     font-family: Sans-Serif;

@@ -26,8 +26,8 @@ const Container = styled.section`
       cursor: pointer;
 
       ${({ theme }) => theme.responsive.md} {
-        width: 10rem;
-        height: 10rem;
+        width: 9rem;
+        height: 9rem;
       }
 
       img {
@@ -59,8 +59,8 @@ const Container = styled.section`
       }
 
       ${({ theme }) => theme.responsive.md} {
-        height: 30rem;
-        width: 30rem;
+        height: 20rem;
+        width: 20rem;
       }
     }
 
@@ -68,13 +68,16 @@ const Container = styled.section`
       position: absolute;
       bottom: 1rem;
       color: ${({ theme }) => theme.colors.white};
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: bolder;
 
       ${({ theme }) => theme.responsive.md} {
         font-size: 2rem;
       }
 
+      ${({ theme }) => theme.responsive.md} {
+        font-size: 3rem;
+      }
     }
   }
 `;
