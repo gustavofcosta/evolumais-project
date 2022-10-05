@@ -13,7 +13,6 @@ export default createGlobalStyle`
    @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Roboto+Condensed:wght@400;700&display=swap');
 
   html {
-    font-size: 85%;
     font-family: Sans-Serif;
   } /*16px*/
 

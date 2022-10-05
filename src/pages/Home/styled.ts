@@ -75,9 +75,6 @@ const Container = styled.section`
         font-size: 2rem;
       }
 
-      ${({ theme }) => theme.responsive.lg} {
-        font-size: 3rem;
-      }
     }
   }
 `;
