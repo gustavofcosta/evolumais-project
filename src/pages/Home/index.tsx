@@ -1,19 +1,58 @@
-import Container from "./styled";
 import Typewriter from "typewriter-effect";
+import {
+  AiFillCloseCircle,
+  AiOutlineBehance,
+  AiOutlineInstagram,
+  AiOutlineWhatsApp,
+} from "react-icons/ai";
 
+import Container from "./styled";
 import menu from "../../assets/images/menu.svg";
-
 import logo from "../../assets/images/logo.svg";
+import heart from "../../assets/images/heart.svg";
+import { useState } from "react";
 
 const Home = () => {
+  const [sidebar, setSidebar] = useState<boolean>(false);
+
   return (
     <div>
-      <Container>
-        <nav>
-          <button>
-            <img src={menu} alt="Menu" />
-          </button>
-        </nav>
+      <Container sidebar={sidebar}>
+        <img src={heart} alt="heart" className="heart" />
+        <div className="nav-wrapper">
+          <nav>
+            <button onClick={() => setSidebar(!sidebar)}>
+              <img src={menu} alt="Menu" />
+            </button>
+            <div className="side-bar ">
+              <div className="links">
+                <ul>
+                  <li>Home</li>
+                  <li>O que Fazemos</li>
+                  <li>Work</li>
+                  <li>Orçamento</li>
+                </ul>
+                <button
+                  className="close-menu"
+                  onClick={() => setSidebar(!sidebar)}
+                >
+                  <AiFillCloseCircle />
+                </button>
+              </div>
+              <ul className="social">
+                <li>
+                  <AiOutlineInstagram />
+                </li>
+                <li>
+                  <AiOutlineBehance />
+                </li>
+                <li>
+                  <AiOutlineWhatsApp />
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
         <div className="wrapper">
           <figure className="logo">
             <img src={logo} alt="Logo Evolumais" />
@@ -31,6 +70,7 @@ const Home = () => {
           </div>
         </div>
       </Container>
+      <div className="full-page"></div>
     </div>
   );
 };

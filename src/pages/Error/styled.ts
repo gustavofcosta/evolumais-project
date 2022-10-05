@@ -15,8 +15,8 @@ const Wrapper = styled.main`
     }
 
     ${({ theme }) => theme.responsive.md} {
-      width: 40rem;
-      height: 40rem;
+      width: 25rem;
+      height: 25rem;
     }
   }
 
