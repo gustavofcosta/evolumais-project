@@ -26,8 +26,13 @@ const Container = styled.section`
       cursor: pointer;
 
       ${({ theme }) => theme.responsive.md} {
-        width: 9rem;
-        height: 9rem;
+        width: 6rem;
+        height: 6rem;
+      }
+
+      ${({ theme }) => theme.responsive.lg} {
+        width: 7rem;
+        height: 7rem;
       }
 
       img {
@@ -50,8 +55,8 @@ const Container = styled.section`
     }
 
     figure {
-      height: 15rem;
-      width: 15rem;
+      height: 14rem;
+      width: 14rem;
 
       img {
         height: 100%;
@@ -59,6 +64,11 @@ const Container = styled.section`
       }
 
       ${({ theme }) => theme.responsive.md} {
+        height: 18rem;
+        width: 18rem;
+      }
+
+      ${({ theme }) => theme.responsive.lg} {
         height: 20rem;
         width: 20rem;
       }
@@ -72,11 +82,11 @@ const Container = styled.section`
       font-weight: bolder;
 
       ${({ theme }) => theme.responsive.md} {
-        font-size: 2rem;
+        font-size: 1.6rem;
       }
 
       ${({ theme }) => theme.responsive.md} {
-        font-size: 3rem;
+        font-size: 2rem;
       }
     }
   }
