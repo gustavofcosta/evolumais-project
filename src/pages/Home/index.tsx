@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <div>
-      <Container sidebar={sidebar}>
+      <Container>
         <video src={video} autoPlay loop muted/>
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
@@ -26,7 +26,7 @@ const Home = () => {
             <button onClick={() => setSidebar(!sidebar)}>
               <img src={menu} alt="Menu" />
             </button>
-            <div className="side-bar ">
+            <div className={`${sidebar ? "sidebar show-sidebar" : "sidebar"}`}>
               <div className="links">
                 <ul>
                   <li>Home</li>

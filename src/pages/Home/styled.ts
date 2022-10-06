@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 
-const Container = styled.section<{ sidebar: boolean }>`
+const Container = styled.section`
   position: relative;
   max-width: 3000px;
   margin: 0 auto;
@@ -76,8 +76,7 @@ const Container = styled.section<{ sidebar: boolean }>`
         }
       }
 
-      .side-bar {
-        display: ${({ sidebar }) => (sidebar ? "block" : "none")};
+      .sidebar {
         position: absolute;
         background-color: ${({ theme }) => theme.colors.primary_500};
         color: ${({ theme }) => theme.colors.white};
@@ -153,8 +152,8 @@ const Container = styled.section<{ sidebar: boolean }>`
       }
     }
 
-    .side-bar-hidden {
-      display: none;
+    .show-sidebar {
+      transform: translate(0);
     }
   }
 
