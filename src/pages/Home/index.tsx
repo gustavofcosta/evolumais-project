@@ -10,21 +10,25 @@ import Container from "./styled";
 import menu from "../../assets/images/menu.svg";
 import logo from "../../assets/images/logo.svg";
 import heart from "../../assets/images/heart.svg";
-import video from "../../assets/video/bg.mp4";
+import video from "../../assets/video/bg1.mp4";
 import { useState } from "react";
 
 const Home = () => {
-  const [isSidebarOpen , setIsSidebarOpen ] = useState<boolean>(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
 
   return (
     <div>
       <Container isSidebarOpen={isSidebarOpen}>
-        <video src={video} autoPlay loop muted/>
+        <video src={video} autoPlay loop muted />
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
           <nav>
-            <button >
-              <img src={menu} alt="Menu"  onClick={() => setIsSidebarOpen(!isSidebarOpen )}/>
+            <button>
+              <img
+                src={menu}
+                alt="Menu"
+                onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+              />
             </button>
             <div className="sidebar">
               <div className="links">
@@ -36,7 +40,7 @@ const Home = () => {
                 </ul>
                 <button
                   className="close-menu"
-                  onClick={() => setIsSidebarOpen(!isSidebarOpen )}
+                  onClick={() => setIsSidebarOpen(!isSidebarOpen)}
                 >
                   <AiFillCloseCircle />
                 </button>

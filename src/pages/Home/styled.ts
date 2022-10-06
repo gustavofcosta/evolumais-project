@@ -1,15 +1,12 @@
 import styled from "styled-components";
 
-
-
-const Container = styled.section<{isSidebarOpen: boolean}>`
+const Container = styled.section<{ isSidebarOpen: boolean }>`
   position: relative;
   max-width: 3000px;
   margin: 0 auto;
   height: 100vh;
   width: 100%;
   overflow: hidden;
-  
 
   video {
     width: 100%;
@@ -47,22 +44,19 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
     position: absolute;
     width: 100%;
     width: 100%;
-    top:0;
+    top: 0;
     display: flex;
     justify-content: flex-end;
     z-index: 99;
-    
 
     nav {
       padding: 2rem 1rem;
-      
 
       button {
         width: 5rem;
         height: 5rem;
         background-color: transparent;
         border: none;
-        
 
         ${({ theme }) => theme.responsive.md} {
           width: 6rem;
@@ -83,7 +77,7 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
 
       .sidebar {
         position: absolute;
-        background-color: ${({ theme }) => theme.colors.primary_500};
+        background-color: ${({ theme }) => theme.colors.primary_400};
         color: ${({ theme }) => theme.colors.white};
         height: 20rem;
         width: 20rem;
@@ -92,8 +86,8 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
         margin: 1rem;
         box-shadow: 2px 6px 28px 2px rgba(0, 0, 0, 0.49);
         transition: ${({ theme }) => theme.transition.slow};
-        transform: ${({isSidebarOpen})=> isSidebarOpen ? " translate(0)" : " translate(105%)" };
-
+        transform: ${({ isSidebarOpen }) =>
+          isSidebarOpen ? " translate(0)" : " translate(105%)"};
 
         .links {
           display: flex;
@@ -131,7 +125,8 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
 
         .close-menu {
           font-size: 1.5rem;
-          color: ${({ theme }) => theme.colors.secondary_400};
+          color: ${({ theme }) => theme.colors.secondary_500};
+          cursor: pointer;
 
           :hover {
             color: ${({ theme }) => theme.colors.secondary_200};
@@ -145,7 +140,6 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
           font-size: 1.5rem;
           cursor: pointer;
           transition: ${({ theme }) => theme.transition.slow};
-          
 
           li {
             :hover {
