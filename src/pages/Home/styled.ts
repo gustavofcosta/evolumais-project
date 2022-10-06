@@ -88,7 +88,6 @@ const Container = styled.section`
         box-shadow: 2px 6px 28px 2px rgba(0, 0, 0, 0.49);
         transition: ${({ theme }) => theme.transition.slow};
 
-
         .links {
           display: flex;
           height: 15rem;
@@ -154,7 +153,7 @@ const Container = styled.section`
     }
 
     .show-sidebar {
-      transform: translate(0);
+      transform: translate(0)
     }
   }
 
