@@ -138,6 +138,7 @@ const Container = styled.section`
           font-size: 1.5rem;
           cursor: pointer;
           transition: ${({ theme }) => theme.transition.slow};
+          transform: translate(-100%);
 
           li {
             :hover {
@@ -153,7 +154,7 @@ const Container = styled.section`
     }
 
     .show-sidebar {
-      transform: translate(0)
+      transform: translate(0);
     }
   }
 
