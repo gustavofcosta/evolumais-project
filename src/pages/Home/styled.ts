@@ -48,6 +48,7 @@ const Container = styled.section<{ sidebar: boolean }>`
     top:0;
     display: flex;
     justify-content: flex-end;
+    z-index: 99;
 
     nav {
       padding: 2rem 1rem;
