@@ -8,7 +8,7 @@ const Container = styled.section`
   margin: 0 auto;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  
 
   video {
     width: 100%;
