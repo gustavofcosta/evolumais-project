@@ -8,6 +8,7 @@ const Container = styled.section`
   margin: 0 auto;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 
   video {
     width: 100%;
@@ -87,7 +88,7 @@ const Container = styled.section`
         margin: 1rem;
         box-shadow: 2px 6px 28px 2px rgba(0, 0, 0, 0.49);
         transition: ${({ theme }) => theme.transition.slow};
-        transform: translate(100%);
+        transform: translate(110%);
 
         .links {
           display: flex;
