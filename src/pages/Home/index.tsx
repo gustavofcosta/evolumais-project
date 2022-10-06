@@ -26,7 +26,7 @@ const Home = () => {
             <button onClick={() => setSidebar(!sidebar)}>
               <img src={menu} alt="Menu" />
             </button>
-            <div className={`${sidebar ? "sidebar" : "sidebar show-sidebar"}`}>
+            <div className="sidebar ">
               <div className="links">
                 <ul>
                   <li>Home</li>
