@@ -10,7 +10,7 @@ import Container from "./styled";
 import menu from "../../assets/images/menu.svg";
 import logo from "../../assets/images/logo.svg";
 import heart from "../../assets/images/heart.svg";
-import video from "../../assets/video/bg1.mp4";
+import video from "../../assets/video/bg2.mp4";
 import { useState } from "react";
 
 const Home = () => {

@@ -77,12 +77,13 @@ const Container = styled.section<{ isSidebarOpen: boolean }>`
 
       .sidebar {
         position: absolute;
-        background-color: ${({ theme }) => theme.colors.primary_400};
+        background-color: ${({ theme }) => theme.colors.primary_500};
         color: ${({ theme }) => theme.colors.white};
         height: 20rem;
         width: 20rem;
         right: 0%;
         top: 0;
+        border-radius: ${({ theme }) => theme.border.md};
         margin: 1rem;
         box-shadow: 2px 6px 28px 2px rgba(0, 0, 0, 0.49);
         transition: ${({ theme }) => theme.transition.slow};
@@ -125,7 +126,7 @@ const Container = styled.section<{ isSidebarOpen: boolean }>`
 
         .close-menu {
           font-size: 1.5rem;
-          color: ${({ theme }) => theme.colors.secondary_500};
+          color: ${({ theme }) => theme.colors.secondary_400};
           cursor: pointer;
 
           :hover {
