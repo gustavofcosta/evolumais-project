@@ -54,6 +54,7 @@ const Container = styled.section<{ sidebar: boolean }>`
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    z-index: 99;
 
     nav {
       padding: 2rem 1rem;
@@ -164,6 +165,7 @@ const Container = styled.section<{ sidebar: boolean }>`
   }
 
   .wrapper {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -172,6 +174,8 @@ const Container = styled.section<{ sidebar: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 99;
+
 
     ${({ theme }) => theme.responsive.md} {
     }
