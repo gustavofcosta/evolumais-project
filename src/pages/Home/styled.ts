@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import background from "../../assets/images/bg.jpg";
+
 
 const Container = styled.section<{ sidebar: boolean }>`
   position: relative;
@@ -8,12 +8,6 @@ const Container = styled.section<{ sidebar: boolean }>`
   margin: 0 auto;
   height: 100vh;
   width: 100%;
-  background-image: url(${background});
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  z-index: 1;
-  opacity: 0.9;
 
   video {
     width: 100%;
@@ -54,7 +48,6 @@ const Container = styled.section<{ sidebar: boolean }>`
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    z-index: 99;
 
     nav {
       padding: 2rem 1rem;
@@ -165,7 +158,6 @@ const Container = styled.section<{ sidebar: boolean }>`
   }
 
   .wrapper {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,8 +166,6 @@ const Container = styled.section<{ sidebar: boolean }>`
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 99;
-
 
     ${({ theme }) => theme.responsive.md} {
     }
