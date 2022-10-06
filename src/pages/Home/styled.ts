@@ -8,6 +8,7 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
   margin: 0 auto;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
   
 
   video {
@@ -54,7 +55,7 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
 
     nav {
       padding: 2rem 1rem;
-      overflow: hidden;
+      
 
       button {
         width: 5rem;
@@ -90,7 +91,7 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
         margin: 1rem;
         box-shadow: 2px 6px 28px 2px rgba(0, 0, 0, 0.49);
         transition: ${({ theme }) => theme.transition.slow};
-        transform: ${({isSidebarOpen})=> isSidebarOpen ? " translate(0)" : " translate(100%)" };
+        transform: ${({isSidebarOpen})=> isSidebarOpen ? " translate(0)" : " translate(105%)" };
 
 
         .links {
