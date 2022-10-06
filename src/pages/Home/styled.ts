@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 
 
-const Container = styled.section`
+const Container = styled.section<{isSidebarOpen: boolean}>`
   position: relative;
   max-width: 3000px;
   margin: 0 auto;
@@ -88,7 +88,7 @@ const Container = styled.section`
         margin: 1rem;
         box-shadow: 2px 6px 28px 2px rgba(0, 0, 0, 0.49);
         transition: ${({ theme }) => theme.transition.slow};
-        transform: translate(110%);
+        transform: ${({isSidebarOpen})=> isSidebarOpen ? " translate(0)" : " translate(105%)" };
 
         .links {
           display: flex;

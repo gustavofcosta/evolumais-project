@@ -18,7 +18,7 @@ const Home = () => {
 
   return (
     <div>
-      <Container>
+      <Container isSidebarOpen={isSidebarOpen}>
         <video src={video} autoPlay loop muted/>
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
