@@ -45,6 +45,7 @@ const Container = styled.section<{ sidebar: boolean }>`
     position: absolute;
     width: 100%;
     width: 100%;
+    top:0;
     display: flex;
     justify-content: flex-end;
 
