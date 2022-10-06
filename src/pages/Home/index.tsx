@@ -10,6 +10,7 @@ import Container from "./styled";
 import menu from "../../assets/images/menu.svg";
 import logo from "../../assets/images/logo.svg";
 import heart from "../../assets/images/heart.svg";
+import video from "../../assets/video/bg.mp4";
 import { useState } from "react";
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
   return (
     <div>
       <Container sidebar={sidebar}>
+        <video src={video} autoPlay loop muted/>
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
           <nav>
