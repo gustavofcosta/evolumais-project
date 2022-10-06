@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Container = styled.section<{ isSidebarOpen: boolean }>`
+export const Container = styled.section<{ isSidebarOpen: boolean }>`
   position: relative;
   max-width: 3000px;
   margin: 0 auto;
@@ -213,4 +213,18 @@ const Container = styled.section<{ isSidebarOpen: boolean }>`
   }
 `;
 
-export default Container;
+export const Flowers = styled.section`
+  margin-top: -6rem;
+  height: 100%;
+  width: 100vw;
+  overflow: hidden;
+
+  ${({ theme }) => theme.responsive.lg} {
+    margin-top: -20rem;
+  }
+
+  img {
+    height: 100%;
+    width: 105%;
+  }
+`;

@@ -1,4 +1,5 @@
 import Typewriter from "typewriter-effect";
+
 import {
   AiFillCloseCircle,
   AiOutlineBehance,
@@ -6,12 +7,15 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 
-import Container from "./styled";
+import { Container, Flowers } from "./styled";
 import menu from "../../assets/images/menu.svg";
 import logo from "../../assets/images/logo.svg";
 import heart from "../../assets/images/heart.svg";
 import video from "../../assets/video/bg2.mp4";
+import flowers from "../../assets/images/flowers.png";
+
 import { useState } from "react";
+import CardServices from "../../components/CardServices";
 
 const Home = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState<boolean>(false);
@@ -19,7 +23,7 @@ const Home = () => {
   return (
     <div>
       <Container isSidebarOpen={isSidebarOpen}>
-        <video src={video} autoPlay loop muted />
+        <video src={video} autoPlay muted />
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
           <nav>
@@ -76,7 +80,14 @@ const Home = () => {
           </div>
         </div>
       </Container>
-      <div className="full-page"></div>
+      <Flowers>
+        <figure>
+          <img src={flowers} alt="flowers" />
+        </figure>
+      </Flowers>
+      <div>
+        <CardServices />
+      </div>
     </div>
   );
 };
