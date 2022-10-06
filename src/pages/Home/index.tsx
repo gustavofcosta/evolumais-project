@@ -23,7 +23,7 @@ const Home = () => {
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
           <nav>
-            <button onClick={() => setIsSidebarOpen(true)}>
+            <button onClick={() => setIsSidebarOpen(!isSidebarOpen )}>
               <img src={menu} alt="Menu" />
             </button>
             <div className={`${isSidebarOpen  ? 'sidebar show-sidebar' : 'sidebar'}`}>
@@ -36,7 +36,7 @@ const Home = () => {
                 </ul>
                 <button
                   className="close-menu"
-                  onClick={() => setIsSidebarOpen(false)}
+                  onClick={() => setIsSidebarOpen(!isSidebarOpen )}
                 >
                   <AiFillCloseCircle />
                 </button>
