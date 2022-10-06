@@ -158,6 +158,8 @@ const Container = styled.section<{ sidebar: boolean }>`
   }
 
   .wrapper {
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
