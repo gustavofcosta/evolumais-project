@@ -14,7 +14,7 @@ import video from "../../assets/video/bg.mp4";
 import { useState } from "react";
 
 const Home = () => {
-  const [sidebar, setSidebar] = useState<boolean>(false);
+  const [isSidebarOpen , setIsSidebarOpen ] = useState<boolean>(false);
 
   return (
     <div>
@@ -23,10 +23,10 @@ const Home = () => {
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
           <nav>
-            <button onClick={() => setSidebar(!sidebar)}>
+            <button onClick={() => setIsSidebarOpen(!isSidebarOpen )}>
               <img src={menu} alt="Menu" />
             </button>
-            <div className="show-sidebar">
+            <div className={`${isSidebarOpen  ? 'sidebar show-sidebar' : 'sidebar'}`}>
               <div className="links">
                 <ul>
                   <li>Home</li>
@@ -36,7 +36,7 @@ const Home = () => {
                 </ul>
                 <button
                   className="close-menu"
-                  onClick={() => setSidebar(!sidebar)}
+                  onClick={() => setIsSidebarOpen(!isSidebarOpen )}
                 >
                   <AiFillCloseCircle />
                 </button>

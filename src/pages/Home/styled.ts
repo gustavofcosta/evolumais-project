@@ -87,6 +87,7 @@ const Container = styled.section`
         margin: 1rem;
         box-shadow: 2px 6px 28px 2px rgba(0, 0, 0, 0.49);
         transition: ${({ theme }) => theme.transition.slow};
+        transform: translate(-100%);
 
         .links {
           display: flex;
