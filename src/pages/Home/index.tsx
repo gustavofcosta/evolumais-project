@@ -23,8 +23,8 @@ const Home = () => {
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
           <nav>
-            <button onClick={() => setIsSidebarOpen(!isSidebarOpen )}>
-              <img src={menu} alt="Menu" />
+            <button >
+              <img src={menu} alt="Menu"  onClick={() => setIsSidebarOpen(!isSidebarOpen )}/>
             </button>
             <div className="sidebar">
               <div className="links">

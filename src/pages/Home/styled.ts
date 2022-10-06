@@ -62,7 +62,7 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
         height: 5rem;
         background-color: transparent;
         border: none;
-        cursor: pointer;
+        
 
         ${({ theme }) => theme.responsive.md} {
           width: 6rem;
@@ -77,6 +77,7 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
         img {
           height: 100%;
           width: 100%;
+          cursor: pointer;
         }
       }
 
