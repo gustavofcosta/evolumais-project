@@ -50,10 +50,11 @@ const Container = styled.section<{isSidebarOpen: boolean}>`
     display: flex;
     justify-content: flex-end;
     z-index: 99;
-    overflow: hidden;
+    
 
     nav {
       padding: 2rem 1rem;
+      overflow: hidden;
 
       button {
         width: 5rem;
