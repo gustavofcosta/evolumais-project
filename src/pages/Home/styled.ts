@@ -42,9 +42,8 @@ const Container = styled.section<{ sidebar: boolean }>`
   }
 
   .nav-wrapper {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    position: fixed;
     width: 100%;
     display: flex;
     justify-content: flex-end;
