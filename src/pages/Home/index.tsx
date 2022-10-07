@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <div>
       <Container isSidebarOpen={isSidebarOpen}>
-        <video src={video} autoPlay muted />
+        <video src={video} autoPlay muted loop/>
         <img src={heart} alt="heart" className="heart" />
         <div className="nav-wrapper">
           <nav>
