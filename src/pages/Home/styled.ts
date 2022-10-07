@@ -214,13 +214,13 @@ export const Container = styled.section<{ isSidebarOpen: boolean }>`
 `;
 
 export const Flowers = styled.section`
-  margin-top: -6rem;
+  margin-top: -10rem;
   height: 100%;
   width: 100vw;
   overflow: hidden;
 
   ${({ theme }) => theme.responsive.lg} {
-    margin-top: -20rem;
+    margin-top: -30rem;
   }
 
   img {
