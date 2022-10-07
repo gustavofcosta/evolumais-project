@@ -220,7 +220,7 @@ export const Flowers = styled.section`
   overflow: hidden;
 
   ${({ theme }) => theme.responsive.lg} {
-    margin-top: -30rem;
+    margin-top: -40rem;
   }
 
   img {
